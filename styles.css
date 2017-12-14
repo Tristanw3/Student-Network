@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html * {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  color: black;
+}
+
+.background {
+  height: 100vh;
+  background-image: url("assets/learn.jpeg");
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: grayscale(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+}
+
+.background input {
+  background-color: transparent;
+  border: 1px grey dashed;
+  color: black;
+  font-size: 30px;
+  width: 300px;
+
+}
+
+input::placeholder {
+  color: green;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid green;
+
+}
+
+section {
+  height: 400px;
+  background-color: lightblue;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.double {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.double > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-basis: 50%;
+
+}
+.double img, .double div > div {
+  margin-bottom: 15px;
+}
+
+.double img {
+  width: 120px;
+  height: 120px;
+}
+
+.double div > div {
+  display: flex;
+  justify-content: space-between;
+}
